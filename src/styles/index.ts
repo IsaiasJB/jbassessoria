@@ -13,8 +13,8 @@ export const {
     theme: {
         colors: {
             primary: '#0E1C2C',
-            secondary: '#97D5EB',
-            highlight: '#D9D9D6',
+            secondary: '#D9D9D6',
+            highlight: '#97D5EB',
 
         },
         fonts: {

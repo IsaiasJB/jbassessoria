@@ -1,17 +1,34 @@
+import { Container, Header, Menu } from "@/styles/pages/home";
+import Image from 'next/image'
 import { styled } from "../styles";
 
-const Button = styled('button', {
-  backgroundColor: '$primary',
-  color: 'white',
-  border: 'none',
-  borderRadius: '4px',
-  fontSize: '14px',
-  padding: '4px 8px',
-  width: '50%',
-})
+import logo from "../assets/LogoJb.svg"
+
+const menuItems = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Sobre nós', href: '/about' },
+  { label: 'Servicos', href: '/services' },
+  { label: 'Contato', href: '/contact' },
+  { label: 'Blog', href: '/blog' },  // Add more links as needed...
+]
+
 
 export default function Home() {
   return (
-    <Button>TESTE</Button>
+    <Container>
+      <Header>
+        <Image
+          src={logo}
+          alt="Picture of the author"
+        />
+        <Menu>
+          {menuItems.map(menu =>
+            <li key={menu.label}>
+              <a href={menu.href}>{menu.label}</a>
+            </li>
+          )}
+        </Menu>
+      </Header>
+    </Container>
   );
 }

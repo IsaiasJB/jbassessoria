@@ -6,7 +6,9 @@ export const globalStyles = globalCss({
         padding: 0,
     },
     body: {
-        backgroundColor: '$highlight',
+        backgroundColor: '$secondary',
+        fontFamily: 'LibreBaskerville, open sans',
+        fontWeight: '400',
         '--webkit-font-smoothing': 'antialiased',
     },
 
