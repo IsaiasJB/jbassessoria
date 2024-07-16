@@ -1,12 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import { styled } from "../styles";
 
-const inter = Inter({ subsets: ["latin"] });
+const Button = styled('button', {
+  backgroundColor: '$primary',
+  color: 'white',
+  border: 'none',
+  borderRadius: '4px',
+  fontSize: '14px',
+  padding: '4px 8px',
+  width: '50%',
+})
 
 export default function Home() {
   return (
-    <h1>TESTE</h1>
+    <Button>TESTE</Button>
   );
 }
