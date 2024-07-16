@@ -2,17 +2,13 @@ import { globalCss } from ".";
 
 export const globalStyles = globalCss({
     '*': {
+        boxSizing: 'border-box',
         margin: 0,
         padding: 0,
     },
     body: {
         backgroundColor: '$secondary',
-        fontFamily: 'LibreBaskerville, open sans',
-        fontWeight: '400',
+        color: '$primary',
         '--webkit-font-smoothing': 'antialiased',
     },
-
-    'body, input, nutton, textarea, select,': {
-        fontWeight: '400',
-    }
 })
