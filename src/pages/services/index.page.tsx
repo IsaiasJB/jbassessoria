@@ -3,7 +3,7 @@ import { Container } from "./styles";
 import { Separator } from "@/components/Separator";
 
 
-export default function Home() {
+export default function Service() {
     return (
         <Container>
             <Header />

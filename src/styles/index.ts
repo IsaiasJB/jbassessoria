@@ -20,5 +20,19 @@ export const {
         fonts: {
             body: 'Arial, sans-serif',
         },
+        space: {
+            1: '8px',
+            2: '16px',
+            3: '24px',
+        },
+        fontSizes: {
+            1: '12px',
+            2: '14px',
+            3: '16px',
+        },
+        radii: {
+            1: '4px',
+            2: '8px',
+        },
     }
 })

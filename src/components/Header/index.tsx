@@ -1,9 +1,10 @@
-import { Button, Container, Link, Menu } from './styles';
+import { Container, Link, Menu } from './styles';
 import Image from 'next/image'
 import { User } from 'phosphor-react'
 
 import logo from "../../assets/LogoJB.svg"
 import { useRouter } from 'next/router';
+import { Button } from '../Button';
 
 const menuItems = [
     { label: 'Inicio', href: '/' },
@@ -34,10 +35,7 @@ export function Header() {
                     </Link>
                 )}
             </Menu>
-            <Button>
-                <User size={20} />
-                Área do Cliente
-            </Button>
+            <Button color="primary" icon={<User size={20} />} iconPosition="left">Área do cliente</Button>
         </Container>
     )
 }

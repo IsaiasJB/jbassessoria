@@ -49,21 +49,3 @@ export const Link = styled('li', {
     }
 })
 
-export const Button = styled('button', {
-    backgroundColor: '$primary',
-    fontFamily: 'Open Sans',
-    display: 'flex',
-    color: '$highlight',
-    fontSize: '1rem',
-    fontWeight: 'bold',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: '1rem',
-    width: '300px',
-    height: '2.938rem',
-    border: 'none',
-    padding: '0.5rem',
-    borderRadius: '0.5rem',
-    cursor: 'pointer',
-})
-
