@@ -11,4 +11,5 @@ export const globalStyles = globalCss({
         color: '$primary',
         '--webkit-font-smoothing': 'antialiased',
     },
+    'html, body': { fontFamily: '"Libre Baskerville", serif' },
 })

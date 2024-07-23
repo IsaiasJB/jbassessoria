@@ -17,18 +17,18 @@ export const {
             highlight: '#97D5EB',
 
         },
-        fonts: {
-            body: 'Arial, sans-serif',
-        },
         space: {
-            1: '8px',
-            2: '16px',
-            3: '24px',
+            1: '4px',
+            2: '8px',
+            3: '16px',
+            4: '24px',
         },
         fontSizes: {
             1: '12px',
             2: '14px',
             3: '16px',
+            4: '18px',
+            5: '24px',
         },
         radii: {
             1: '4px',

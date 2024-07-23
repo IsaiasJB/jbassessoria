@@ -20,7 +20,7 @@ export function Header() {
     return (
         <Container>
             <Image
-                src={logo}
+                src={logo as string}
                 alt="Picture of the author"
                 quality={100}
                 priority
@@ -35,7 +35,7 @@ export function Header() {
                     </Link>
                 )}
             </Menu>
-            <Button color="primary" icon={<User size={20} />} iconPosition="left">Área do cliente</Button>
+            <Button color="primary" size="large"  icon={<User size={20} />} iconPosition="left" label="Área do cliente"/>
         </Container>
     )
 }

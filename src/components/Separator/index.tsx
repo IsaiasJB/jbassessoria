@@ -4,6 +4,6 @@ type SeparatorComponentProps = {
     width?: 'small' | 'medium' | 'large' | 'full';
 };
 
-export function Separator({ width = 'full' }: SeparatorComponentProps) {
+export function Seperator({ width = 'full' }: SeparatorComponentProps) {
     return <LineSeparator width={width} />
 }

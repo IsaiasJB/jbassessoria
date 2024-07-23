@@ -2,14 +2,12 @@ import { styled } from '@/styles';
 
 
 export const StyledButton = styled('button', {
-    // Estilos base
     display: 'inline-flex',
-    fontFamily: 'Open Sans',
     alignItems: 'center',
     justifyContent: 'center',
     gap: '1rem',
     padding: '$1 $2',
-    width: '300px',
+    width: '270px',
     height: '3rem',
     fontWeight: 'bold',
     borderRadius: '0.5rem',
