@@ -10,6 +10,8 @@ import societario from "../../assets/socioetario.png"
 import fiscal from "../../assets/fiscal.png"
 import dp from "../../assets/dp.png"
 import {descriptions} from "@/content/description";
+import {Footer} from "@/components/Footer";
+import {Box} from "@/components/Box";
 
 
 export default function Home() {
@@ -34,7 +36,9 @@ export default function Home() {
                           icon={<AddressBook size={20}/>} />
                 </ContentCard>
                 <Seperator width="full"/>
+                <Box />
             </Content>
+            <Footer />
 
         </Container>
     );

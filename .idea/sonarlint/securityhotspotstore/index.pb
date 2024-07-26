@@ -33,3 +33,17 @@ R
 "src/components/Separator/index.tsx,5/f/5f960b167402b05e0d50745929b9d82a283d40cc
 R
 "src/components/Separator/styles.ts,e/a/eaa813ca7bcd34f8884892e6359139076f61941d
+O
+src/components/Footer/index.tsx,1/0/1038a3a0256a9ef45dd8802639d5f8d60c95b7a2
+O
+src/components/Footer/styles.ts,b/c/bc29c791ae70bc26e1151c78c11296066bcbc737
+E
+src/assets/Vector.svg,c/9/c95ce2e40b93e2e1634b51a2f8bbb694eb41c80b
+L
+src/components/Box/index.tsx,b/9/b9e102073ba919e246ad3549c1ed2f17944e1108
+L
+src/components/Box/styles.ts,5/f/5fc62b8cc7079cb2f0dd51e00fb5e8753d2d06b9
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
