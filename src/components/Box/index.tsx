@@ -11,7 +11,7 @@ export function Box() {
             </BoxTitle>
             <BoxText>{descriptions.sobreNos}</BoxText>
             <BoxImage>
-                <Image src={cartao as string} alt="Card Img" quality={100} priority/>
+                <Image src={cartao} alt="Card Img" quality={100} priority/>
             </BoxImage>
         </BoxContainer>
     )

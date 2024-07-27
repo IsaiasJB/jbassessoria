@@ -26,13 +26,13 @@ export default function Home() {
                             label="Solicite um orcamento"/>
                 </ContentTitle>
                 <ContentCard>
-                    <Card imageSrc={contabilidade as string} title="Contabilidade" description={descriptions.contabilidade}
+                    <Card imageSrc={contabilidade} title="Contabilidade" description={descriptions.contabilidade}
                           icon={<Calculator size={20}/>} />
-                    <Card imageSrc={societario as string} title="Societário" description={descriptions.societario}
-                          icon={<UsersThree size={20}/>} tag="Contabil"/>
-                    <Card imageSrc={fiscal as string} title="Fiscal" description={descriptions.fiscal}
-                          icon={<Laptop size={20}/>} tag="Contabil"/>
-                    <Card imageSrc={dp as string} title="Dpto. Pessoal" description={descriptions.dp}
+                    <Card imageSrc={societario} title="Societário" description={descriptions.societario}
+                          icon={<UsersThree size={20}/>}/>
+                    <Card imageSrc={fiscal} title="Fiscal" description={descriptions.fiscal}
+                          icon={<Laptop size={20}/>}/>
+                    <Card imageSrc={dp} title="Dpto. Pessoal" description={descriptions.dp}
                           icon={<AddressBook size={20}/>} />
                 </ContentCard>
                 <Seperator width="full"/>
