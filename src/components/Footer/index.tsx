@@ -65,7 +65,7 @@ export function Footer() {
                     </SocialLinks>
                 </FooterItem>
                 <FooterItem>
-                    <LogoLink href="#">
+                    <LogoLink>
                         <Image src={logo} alt="Card Img" quality={100} priority/>
                     </LogoLink>
                 </FooterItem>
