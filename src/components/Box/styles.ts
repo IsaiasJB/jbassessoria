@@ -6,13 +6,12 @@ export const BoxContainer = styled('div', {
     gridAutoRows: '100%',
     gap: '20px',
     padding: '20px',
-    // backgroundColor: 'red'
 });
 
-export const BoxTitle = styled('div', {
-    color: '$primary',
-    width: '80%',
-    // backgroundColor: 'red'
+export const BoxTitle = styled('h2', {
+    fontSize: '$5',
+    fontWeight: 'normal',
+    display: 'flex',
 
 });
 

@@ -7,7 +7,7 @@ export function Box() {
     return (
         <BoxContainer>
             <BoxTitle>
-                <h2>Sobre nós</h2>
+                Sobre nós
             </BoxTitle>
             <BoxText>{descriptions.sobreNos}</BoxText>
             <BoxImage>

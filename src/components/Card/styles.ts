@@ -19,25 +19,32 @@ export const ImageContainer = styled('div', {
 
 export const CardContent = styled('div', {
     padding: '$2',
+    display: 'flex',
+    justifyContent:'space-between',
+    textAlign: 'left',
+    flexDirection: 'column',
 });
 
 export const CardTitle = styled('h2', {
+    display: 'inline-flex',
+    alignItems: 'center',
     fontSize: '$4',
     margin: '$2 0',
     color: '#333',
-    display: 'flex',
-    alignItems: 'center',
+
 });
 
 export const CardDescription = styled('p', {
     fontSize: '$3',
     color: '#666',
+    textAlign: 'left',
 });
 
 export const IconWrapper = styled('span', {
     marginRight: '$2',
     display: 'flex',
     alignItems: 'center',
+    verticalAlign: 'middle',
     '& svg': {
         width: '25px',
         height: '25px',
@@ -52,4 +59,5 @@ export const Tag = styled('span', {
     fontSize: '$1',
     alignSelf: 'flex-start',
     marginBottom: '8px',
+
 });

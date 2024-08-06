@@ -12,6 +12,8 @@ import dp from "../../assets/dp.png"
 import {descriptions} from "@/content/description";
 import {Footer} from "@/components/Footer";
 import {Box} from "@/components/Box";
+import {TestimonialsCarousel} from "@/components/TestimonialsCarousel";
+import {Blog} from "@/components/Blog";
 
 
 export default function Home() {
@@ -26,7 +28,7 @@ export default function Home() {
                             label="Solicite um orcamento"/>
                 </ContentTitle>
                 <ContentCard>
-                    <Card imageSrc={contabilidade} title="Contabilidade" description={descriptions.contabilidade}
+                    <Card imageSrc={contabilidade} title="Contabilidade"  description={descriptions.contabilidade}
                           icon={<Calculator size={20}/>} />
                     <Card imageSrc={societario} title="Societário" description={descriptions.societario}
                           icon={<UsersThree size={20}/>}/>
@@ -37,6 +39,10 @@ export default function Home() {
                 </ContentCard>
                 <Seperator width="full"/>
                 <Box />
+                <Seperator width="full"/>
+                <TestimonialsCarousel />
+                <Seperator width="full"/>
+                <Blog />
             </Content>
             <Footer />
 

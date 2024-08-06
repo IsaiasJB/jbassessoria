@@ -11,7 +11,7 @@ const menuItems = [
     { label: 'Sobre nós', href: '/about' },
     { label: 'Serviços', href: '/services' },
     { label: 'Contato', href: '/contact' },
-    { label: 'Blog', href: '/blog' },  // Add more links as needed...
+    { label: 'Blog', href: '/blog' },
 ]
 
 export function Header() {

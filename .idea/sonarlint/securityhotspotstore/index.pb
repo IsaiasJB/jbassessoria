@@ -47,3 +47,13 @@ S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+]
+-src/components/TestimonialsCarousel/index.tsx,9/0/909bc645895f924af0a3615f72a504db62bcc976
+]
+-src/components/TestimonialsCarousel/styles.ts,7/2/729ab5357c90299a7f2749d3b72667efb3136390
+M
+src/components/Blog/index.tsx,f/e/fe2fe373621182c42ccd63fac9a392710cb23406
+M
+src/components/Blog/styles.ts,f/1/f1683735800ff74ce024f5d6262c0a30f3bcf5b8
+A
+package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
