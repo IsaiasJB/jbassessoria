@@ -34,8 +34,6 @@ export const Avatar = styled('img', {
     height: '100px',
     objectFit: 'cover',
     marginBottom: '10px',
-    backgroundColor: 'red'
-
 });
 
 export const Name = styled('h4', {

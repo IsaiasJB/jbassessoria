@@ -7,7 +7,7 @@ export const StyledButton = styled('button', {
     justifyContent: 'center',
     gap: '1rem',
     padding: '$1 $2',
-    width: '270px',
+    width: 'auto',
     height: '3rem',
     fontWeight: 'bold',
     borderRadius: '0.5rem',
@@ -62,11 +62,33 @@ export const StyledButton = styled('button', {
                 flexDirection: 'row-reverse',
             },
         },
+        hideLabelOnMobile: {
+            true: {},
+            false: {},
+        },
     },
 
-    // Variantes padrão
+    compoundVariants: [
+        {
+            hideLabelOnMobile: true,
+            css: {
+                '@tablet': {
+                    '& p': {
+                        display: 'none',
+                    },
+                },
+                '@mobile': {
+                    '& p': {
+                        display: 'none',
+                    },
+                },
+            },
+        },
+    ],
+
     defaultVariants: {
         color: 'primary',
         size: 'medium',
+        hideLabelOnMobile: 'false',
     },
 });

@@ -1,8 +1,9 @@
 import { styled } from "@/styles";
 
 export const BlogContainer = styled('div', {
+    display: 'flex',
+    flexDirection: 'column',
     width: '100%',
-    textAlign: 'center',
 });
 
 export const BlogTitle = styled('h2', {
@@ -16,9 +17,22 @@ export const BlogTitle = styled('h2', {
 });
 
 export const BlogWrapper = styled('div', {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: '24px',
+    '@desktop' : {
+        display: 'flex',
+        justifyContent: 'space-around',
+        flexDirection: 'row',
+        gap: '24px',
+    },
+
+    '@tablet' : {
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '24px',
+    },
+
+    '@mobile' : {
+        display: 'grid',
+        gridTemplateColumns: '1fr',
+        gap: '24px',
+    },
 });

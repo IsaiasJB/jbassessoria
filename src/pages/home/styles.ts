@@ -13,16 +13,34 @@ export const Content = styled('div', {
     alignItems: 'center',
     gap: '1rem',
     padding: '2rem 9.375rem',
-
     flexDirection: 'column',
     width: '100%',
 })
 
 export const ContentTitle = styled('div', {
-    display: 'flex',
-    alignItems: 'center',
-    width: '100%',
-    justifyContent: 'space-between',
+    marginBottom: '1rem',
+
+    '@desktop' : {
+        display: 'flex',
+        alignItems: 'center',
+        width: '100%',
+        justifyContent: 'space-between',
+    },
+
+    '@tablet' : {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+        justifyContent: 'center',
+    },
+    '@mobile' : {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+        justifyContent: 'center',
+    },
 })
 
 export const Title = styled('h2', {
@@ -34,10 +52,29 @@ export const Title = styled('h2', {
 });
 
 export const ContentCard = styled('div', {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '3rem',
-    width: '100%',
+    '@desktop' : {
+        display: 'flex',
+        justifyContent: 'space-around',
+        gap: '3rem',
+        width: '100%',
+    },
+
+    '@tablet' : {
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '3rem',
+        width: '100%',
+    },
+
+    '@mobile' : {
+        display: 'grid',
+        gridTemplateColumns: '1fr',
+        gap: '3rem',
+        width: '100%',
+    },
+
+
+
+
 })
 

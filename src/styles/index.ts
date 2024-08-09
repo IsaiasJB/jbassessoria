@@ -34,5 +34,10 @@ export const {
             1: '4px',
             2: '8px',
         },
-    }
+    },
+    media: {
+        mobile: '(max-width: 680px)',
+        tablet: '(min-width: 681px) and (max-width: 1023px)',
+        desktop: '(min-width: 1024px)',
+    },
 })

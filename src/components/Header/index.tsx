@@ -1,10 +1,17 @@
-import { Container, Link, Menu } from './styles';
+import {Container, DropdownMenu, HamburgerButton, HeaderContent, Link, Menu} from './styles';
 import Image from 'next/image'
-import { User } from 'phosphor-react'
+import {List, User} from 'phosphor-react'
 
 import logo from "../../assets/LogoJB.svg"
 import { useRouter } from 'next/router';
 import { Button } from '../Button';
+import {useEffect, useState} from "react";
+import {Seperator} from "@/components/Separator";
+
+interface WindowSize {
+    width: number | undefined;
+    height: number | undefined;
+}
 
 const menuItems = [
     { label: 'Inicio', href: '/' },
@@ -15,7 +22,13 @@ const menuItems = [
 ]
 
 export function Header() {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleMenu = () => setIsOpen(!isOpen)
+
+
     const location = useRouter()
+
 
     return (
         <Container>
@@ -35,7 +48,26 @@ export function Header() {
                     </Link>
                 )}
             </Menu>
-            <Button color="primary" size="large"  icon={<User size={20} />} iconPosition="left" label="Área do cliente"/>
+            <HeaderContent>
+                <Button hideLabelOnMobile color="primary" size="large"  icon={<User size={20} />} iconPosition="left" label="Área do cliente"/>
+                <HamburgerButton onClick={toggleMenu} open={isOpen} >
+                    <List size={30} color="#97D5EB" />
+                </HamburgerButton>
+            </HeaderContent>
+
+
+            <DropdownMenu open={isOpen}>
+                {menuItems.map(menu =>
+                    <li
+                        key={menu.label}
+                        isActive={location.pathname === menu.href}
+                    >
+                        <a href={menu.href}>{menu.label}</a>
+                        <Seperator width="large" />
+                    </li>
+                )}
+            </DropdownMenu>
         </Container>
     )
 }
+
