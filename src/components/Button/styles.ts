@@ -5,11 +5,10 @@ export const StyledButton = styled('button', {
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: '1rem',
+    gap: '0.5rem',
     padding: '$1 $2',
     width: 'auto',
     height: '3rem',
-    fontWeight: 'bold',
     borderRadius: '0.5rem',
     border: 'none',
     cursor: 'pointer',
@@ -35,6 +34,7 @@ export const StyledButton = styled('button', {
             transparent: {
                 backgroundColor: 'transparent',
                 color: '$white',
+                border: '1px solid',
                 // '&:hover': {
                 //     backgroundColor: '#7e7e7e',
                 // },
@@ -92,3 +92,7 @@ export const StyledButton = styled('button', {
         hideLabelOnMobile: 'false',
     },
 });
+
+export const TextButton = styled('p', {
+    fontSize: '$3'
+})

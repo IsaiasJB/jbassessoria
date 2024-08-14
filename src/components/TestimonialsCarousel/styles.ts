@@ -11,6 +11,43 @@ export const Title = styled('h2', {
     fontWeight: 'normal',
     textAlign: 'left',
     marginBottom: '24px',
+    position: 'relative',
+    paddingBottom: '0.5rem',
+
+    '&::after': {
+        content: '',
+        position: 'absolute',
+        left: 0,
+        bottom: -12,
+        width: '117px', // Largura da linha
+        height: '2px', // Altura da linha
+        backgroundColor: '$highlight',
+    },
+
+    '@tablet': {
+        '&::after': {
+            content: '',
+            position: 'absolute',
+            left: 0,
+            bottom: 0,
+            width: '117px', // Largura da linha
+            height: '2px', // Altura da linha
+            backgroundColor: '$highlight',
+        },
+
+    },
+    '@mobile': {
+        fontSize: '$5',
+        '&::after': {
+            content: '',
+            position: 'absolute',
+            left: 0,
+            bottom: 0,
+            width: '100px', // Largura da linha
+            height: '2px', // Altura da linha
+            backgroundColor: '$highlight',
+        },
+    },
 });
 
 export const TestimonialWrapper = styled('div', {
@@ -18,6 +55,7 @@ export const TestimonialWrapper = styled('div', {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
+
 });
 
 export const Testimonial = styled('div', {
@@ -54,4 +92,11 @@ export const Quote = styled('p', {
     borderRadius: '10px',
     width: '600px',
     textAlign: 'center',
+
+    '@tablet': {
+        width: '400px',
+    },
+    '@mobile': {
+        width: '200px',
+    },
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledButton } from './styles';
+import {StyledButton, TextButton} from './styles';
 
 
 type ButtonProps = React.ComponentProps<typeof StyledButton> & {
@@ -12,7 +12,7 @@ export function Button({  icon, iconPosition, label, hideLabelOnMobile = false, 
     return (
         <StyledButton {...props} iconPosition={iconPosition} hideLabelOnMobile={hideLabelOnMobile ? 'true' : 'false'} >
             {icon && <span>{icon}</span>}
-            <p>{label}</p>
+            <TextButton>{label}</TextButton>
         </StyledButton>
     )
 }

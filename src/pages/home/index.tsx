@@ -14,22 +14,25 @@ import {Footer} from "@/components/Footer";
 import {Box} from "@/components/Box";
 import {TestimonialsCarousel} from "@/components/TestimonialsCarousel";
 import {Blog} from "@/components/Blog";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
+import {Hero} from "@/components/Hero";
 
 
 export default function Home() {
-    const { width, height } = useWindowSize();
+    const {width, height} = useWindowSize();
     return (
         <Container>
             <Header/>
             <Seperator width="large"/>
+            <Hero/>
             <Content>
+
                 <p>Largura da tela: {width}px</p>
                 <p>Altura da tela: {height}px</p>
                 <ContentTitle>
                     <Title>Alguns de nossos servicos</Title>
                     <Button color="primary" size="large" icon={<CaretDoubleRight size={20}/>} iconPosition="right"
-                            label="Solicite um orcamento"/>
+                            label="Solicite um orçamento"/>
                 </ContentTitle>
                 <ContentCard>
                     <Card imageSrc={contabilidade} title="Contabilidade" description={descriptions.contabilidade}

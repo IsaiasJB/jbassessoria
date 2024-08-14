@@ -30,6 +30,42 @@ export const BoxTitle = styled('h2', {
     fontSize: '$5',
     fontWeight: 'normal',
     display: 'flex',
+    position: 'relative',
+    paddingBottom: '0.5rem',
+
+    '&::after': {
+        content: '',
+        position: 'absolute',
+        left: 0,
+        bottom: 160,
+        width: '117px', // Largura da linha
+        height: '2px', // Altura da linha
+        backgroundColor: '$highlight',
+    },
+
+    '@tablet': {
+        '&::after': {
+            content: '',
+            position: 'absolute',
+            left: 0,
+            bottom: 0,
+            width: '117px', // Largura da linha
+            height: '2px', // Altura da linha
+            backgroundColor: '$highlight',
+        },
+        // fontSize: '$4',
+    },
+    '@mobile': {
+        '&::after': {
+            content: '',
+            position: 'absolute',
+            left: 0,
+            bottom: 0,
+            width: '117px', // Largura da linha
+            height: '2px', // Altura da linha
+            backgroundColor: '$highlight',
+        },
+    },
 
 });
 

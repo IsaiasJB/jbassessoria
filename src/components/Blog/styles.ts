@@ -14,8 +14,52 @@ export const BlogTitle = styled('h2', {
     alignItems: 'center',
     textAlign: 'left',
     marginBottom: '24px',
+    position: 'relative',
+    paddingBottom: '0.2rem',
+
+    '&::after': {
+        content: '',
+        position: 'absolute',
+        left: 0,
+        bottom: -12,
+        width: '117px', // Largura da linha
+        height: '2px', // Altura da linha
+        backgroundColor: '$highlight',
+    },
+
+    '@tablet': {
+        '&::after': {
+            content: '',
+            position: 'absolute',
+            left: 0,
+            bottom: 0,
+            width: '117px', // Largura da linha
+            height: '2px', // Altura da linha
+            backgroundColor: '$highlight',
+        },
+
+    },
+    '@mobile': {
+        fontSize: '$5',
+        '&::after': {
+            content: '',
+            position: 'absolute',
+            left: 0,
+            bottom: 0,
+            width: '117px', // Largura da linha
+            height: '2px', // Altura da linha
+            backgroundColor: '$highlight',
+        },
+    },
 });
 
+export const BlogSubtitle = styled('p', {
+    fontSize: '$4',
+    fontWeight: 'normal',
+    margin: '$2 0',
+    marginBottom: '24px',
+    textAlign: 'left',
+})
 export const BlogWrapper = styled('div', {
     '@desktop' : {
         display: 'flex',

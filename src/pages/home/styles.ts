@@ -43,12 +43,55 @@ export const ContentTitle = styled('div', {
     },
 })
 
+export const TitleContent = styled('div', {
+    display: 'flex',
+    gap: '0.5rem',
+    alignItems: 'center',
+})
+
 export const Title = styled('h2', {
     fontSize: '$5',
     fontWeight: 'normal',
     margin: '$2 0',
     display: 'flex',
     alignItems: 'center',
+    position: 'relative',
+    paddingBottom: '0.5rem',
+
+    '&::after': {
+        content: '',
+        position: 'absolute',
+        left: 0,
+        bottom: -12,
+        width: '117px', // Largura da linha
+        height: '2px', // Altura da linha
+        backgroundColor: '$highlight',
+    },
+
+    '@tablet': {
+        '&::after': {
+            content: '',
+            position: 'absolute',
+            left: 0,
+            bottom: 0,
+            width: '117px', // Largura da linha
+            height: '2px', // Altura da linha
+            backgroundColor: '$highlight',
+        },
+        // fontSize: '$4',
+    },
+    '@mobile': {
+        fontSize: '22px',
+        '&::after': {
+            content: '',
+            position: 'absolute',
+            left: 0,
+            bottom: 0,
+            width: '117px', // Largura da linha
+            height: '2px', // Altura da linha
+            backgroundColor: '$highlight',
+        },
+    },
 });
 
 export const ContentCard = styled('div', {
@@ -72,9 +115,6 @@ export const ContentCard = styled('div', {
         gap: '3rem',
         width: '100%',
     },
-
-
-
 
 })
 

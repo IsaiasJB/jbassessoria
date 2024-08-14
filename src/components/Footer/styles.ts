@@ -15,6 +15,11 @@ export const FooterSection = styled('div', {
     justifyContent: 'space-between',
     width: '100%',
     maxWidth: '1200px',
+
+    '@mobile': {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(1, 1fr)',
+    }
 });
 
 export const FooterItem = styled('div', {
@@ -41,6 +46,7 @@ export const ContactInfo = styled('div', {
     color: '$secondary',
     fontSize: '14px',
 
+
     '& p': {
         margin: '5px 0',
     },
@@ -49,6 +55,7 @@ export const ContactInfo = styled('div', {
 export const SocialLinks = styled('div', {
     display: 'flex',
     alignItems: 'center',
+    marginBottom: '10px',
 
     '& a': {
         marginRight: '10px',
@@ -73,6 +80,16 @@ export const SocialIcon = styled('a', {
 
 export const LogoLink = styled('div', {
     display: 'inline-block',
+    width: '100%',
+
+    '@mobile': {
+        width: '100%',
+        padding: '20px',
+        position: 'absolute',
+        top: 0,
+        right: 10,
+
+    }
 });
 
 export const CopyrightSection = styled('div', {

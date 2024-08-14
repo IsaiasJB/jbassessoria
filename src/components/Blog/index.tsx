@@ -1,4 +1,4 @@
-import {BlogContainer, BlogTitle, BlogWrapper} from "@/components/Blog/styles";
+import {BlogContainer, BlogSubtitle, BlogTitle, BlogWrapper} from "@/components/Blog/styles";
 import {Card} from "@/components/Card";
 import contabilidade from "@/assets/contabilidade.png";
 import {descriptions} from "@/content/description";
@@ -7,6 +7,7 @@ export function Blog() {
     return (
         <BlogContainer>
             <BlogTitle>JBlog</BlogTitle>
+            <BlogSubtitle>As últimas noticias</BlogSubtitle>
             <BlogWrapper>
                 <Card imageSrc={contabilidade} title="EFD Contribuições: prazo de envio encerra AMANHÃ!" tag="Contabíl"
                       description={descriptions.contabilidade}
