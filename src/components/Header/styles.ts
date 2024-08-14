@@ -3,7 +3,6 @@ import { styled } from "@/styles"
 
 export const Container = styled('header', {
     display: 'flex',
-    maxWidth: '100%',
     alignItems: 'center',
     padding: '2rem 9.375rem',
     width: '100%',
