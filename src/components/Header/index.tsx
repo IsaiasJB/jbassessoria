@@ -1,4 +1,4 @@
-import {Container, DropdownMenu, HamburgerButton, HeaderContent, Link, Menu} from './styles';
+import {Container, DropdownMenu, HeaderContent, Link, Menu} from './styles';
 import Image from 'next/image'
 import {List, User} from 'phosphor-react'
 
@@ -7,6 +7,7 @@ import { useRouter } from 'next/router';
 import { Button } from '../Button';
 import {useEffect, useState} from "react";
 import {Seperator} from "@/components/Separator";
+import {HamburgerButton} from "@/components/HamburgerButton";
 
 interface WindowSize {
     width: number | undefined;
@@ -23,9 +24,7 @@ const menuItems = [
 
 export function Header() {
     const [isOpen, setIsOpen] = useState(false)
-
     const toggleMenu = () => setIsOpen(!isOpen)
-
 
     const location = useRouter()
 
@@ -34,6 +33,8 @@ export function Header() {
         <Container>
             <Image
                 src={logo.src}
+                width={300}
+                height={300}
                 alt="Picture of the author"
                 quality={100}
                 priority
@@ -50,7 +51,7 @@ export function Header() {
             </Menu>
             <HeaderContent>
                 <Button hideLabelOnMobile color="primary" size="large"  icon={<User size={20} />} iconPosition="left" label="Área do cliente"/>
-                <HamburgerButton onClick={toggleMenu} open={isOpen} >
+                <HamburgerButton onClick={toggleMenu} open={isOpen} className={isOpen ? 'open' : ''} >
                     <List size={30} color="#97D5EB" />
                 </HamburgerButton>
             </HeaderContent>
