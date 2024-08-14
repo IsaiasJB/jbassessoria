@@ -15,7 +15,7 @@ export function Box() {
                 <p>{descriptions.sobreNos2}</p>
             </BoxText>
             <BoxImage>
-                <Image src={cartao} alt="Card Img" width={480} height={200} quality={100} priority/>
+                <Image src={cartao.src} alt="Card Img" width={480} height={200} quality={100} priority/>
             </BoxImage>
         </BoxContainer>
     )

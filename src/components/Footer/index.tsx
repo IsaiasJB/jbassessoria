@@ -66,7 +66,7 @@ export function Footer() {
                 </FooterItem>
                 <FooterItem>
                     <LogoLink>
-                        <Image src={logo} alt="Card Img" quality={100} priority/>
+                        <Image src={logo.src} alt="Card Img" quality={100} priority/>
                     </LogoLink>
                 </FooterItem>
             </FooterSection>

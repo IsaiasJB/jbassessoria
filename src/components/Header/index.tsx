@@ -33,7 +33,7 @@ export function Header() {
     return (
         <Container>
             <Image
-                src={logo}
+                src={logo.src}
                 alt="Picture of the author"
                 quality={100}
                 priority

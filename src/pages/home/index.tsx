@@ -35,13 +35,13 @@ export default function Home() {
                             label="Solicite um orçamento"/>
                 </ContentTitle>
                 <ContentCard>
-                    <Card imageSrc={contabilidade} title="Contabilidade" description={descriptions.contabilidade}
+                    <Card imageSrc={contabilidade.src} title="Contabilidade" description={descriptions.contabilidade}
                           icon={<Calculator size={20}/>}/>
-                    <Card imageSrc={societario} title="Societário" description={descriptions.societario}
+                    <Card imageSrc={societario.src} title="Societário" description={descriptions.societario}
                           icon={<UsersThree size={20}/>}/>
-                    <Card imageSrc={fiscal} title="Fiscal" description={descriptions.fiscal}
+                    <Card imageSrc={fiscal.src} title="Fiscal" description={descriptions.fiscal}
                           icon={<Laptop size={20}/>}/>
-                    <Card imageSrc={dp} title="Dpto. Pessoal" description={descriptions.dp}
+                    <Card imageSrc={dp.src} title="Dpto. Pessoal" description={descriptions.dp}
                           icon={<AddressBook size={20}/>}/>
                 </ContentCard>
                 <Seperator width="full"/>
