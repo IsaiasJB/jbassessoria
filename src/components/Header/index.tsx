@@ -51,7 +51,7 @@ export function Header() {
             </Menu>
             <HeaderContent>
                 <Button hideLabelOnMobile color="primary" size="large"  icon={<User size={20} />} iconPosition="left" label="Área do cliente"/>
-                <HamburgerButton onClick={toggleMenu} open={isOpen} className={isOpen ? 'open' : ''} >
+                <HamburgerButton onClick={toggleMenu} open={isOpen} className={isOpen ? 'open' : ''}>
                     <List size={30} color="#97D5EB" />
                 </HamburgerButton>
             </HeaderContent>
