@@ -10,10 +10,12 @@ import {
 } from "@/components/Footer/styles";
 import Image from "next/image";
 
-import logo from "../../assets/Vector.svg"
+interface FooterProps {
+    imageSrc: string;
+}
 
 
-export function Footer() {
+export function Footer({imageSrc}: FooterProps) {
     return (
         <FooterContainer>
             <FooterSection>
@@ -66,7 +68,7 @@ export function Footer() {
                 </FooterItem>
                 <FooterItem>
                     <LogoLink>
-                        <Image src={logo.src} alt="Card Img" quality={100} priority/>
+                        <Image src={imageSrc}  alt="Card Img" width={100} height={84}  quality={100} priority/>
                     </LogoLink>
                 </FooterItem>
             </FooterSection>

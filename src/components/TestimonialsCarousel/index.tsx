@@ -7,10 +7,10 @@ import {
     Position,
     Quote,
     Testimonial,
-    TestimonialsContainer, TestimonialWrapper, Title
+    TestimonialsContainer,
+    TestimonialWrapper,
+    Title
 } from "@/components/TestimonialsCarousel/styles";
-
-import societario from "../../assets/socioetario.png"
 import maria from "../../assets/maria.png"
 import joao from "../../assets/joao.png"
 
@@ -20,15 +20,16 @@ const testimonials = [
         name: 'Maria Silva',
         position: 'Proprietária\nDoçuras da Maria',
         quote: 'Desde o primeiro contato, me senti acolhida e compreendida. A equipe é extremamente profissional, atenciosa e sempre disposta a esclarecer qualquer dúvida, por menor que seja.',
-        avatar: maria.src,
+        avatar: `${maria.src}`,
     },
     {
         name: 'João Oliveira',
         position: 'Gerente\nTech Solutions',
         quote: 'A JB Assessoria é um parceiro estratégico para o meu negócio. Eles nos ajudam a otimizar nossos impostos, identificar oportunidades de economia e tomar decisões mais inteligentes. A confiança que depositamos neles é total.',
-        avatar: joao.src,
+        avatar: `${joao.src}`,
     },
 ];
+
 export function TestimonialsCarousel() {
     const settings = {
         dots: true,
@@ -78,22 +79,21 @@ export function TestimonialsCarousel() {
         <TestimonialsContainer>
             <Title>O que os nossos clientes dizem</Title>
 
-                <Slider {...settings} >
-                    {testimonials.map((testimonial, index) => (
-                        <TestimonialWrapper key={index}>
-                            <Testimonial>
-                                <Avatar src={testimonial.avatar} alt={testimonial.name} />
-                                <Name>{testimonial.name}</Name>
-                                <Position>{testimonial.position}</Position>
-                                <Quote>{testimonial.quote}</Quote>
-                            </Testimonial>
-                        </TestimonialWrapper>
+            <Slider {...settings} >
+                {testimonials.map((testimonial, index) => (
+                    <TestimonialWrapper key={index}>
+                        <Testimonial>
+                            <Avatar src={testimonial.avatar} alt={testimonial.name}/>
+                            <Name>{testimonial.name}</Name>
+                            <Position>{testimonial.position}</Position>
+                            <Quote>{testimonial.quote}</Quote>
+                        </Testimonial>
+                    </TestimonialWrapper>
 
-                    ))}
-                </Slider>
-
+                ))}
+            </Slider>
 
 
         </TestimonialsContainer>
     );
-};
+}

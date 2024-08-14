@@ -3,9 +3,9 @@ import Image from 'next/image'
 import {List, User} from 'phosphor-react'
 
 import logo from "../../assets/LogoJB.svg"
-import { useRouter } from 'next/router';
-import { Button } from '../Button';
-import {useEffect, useState} from "react";
+import {useRouter} from 'next/router';
+import {Button} from '../Button';
+import {useState} from "react";
 import {Seperator} from "@/components/Separator";
 import {HamburgerButton} from "@/components/HamburgerButton";
 
@@ -33,8 +33,8 @@ export function Header() {
         <Container>
             <Image
                 src={logo.src}
-                width={300}
-                height={300}
+                width={185}
+                height={59}
                 alt="Picture of the author"
                 quality={100}
                 priority
