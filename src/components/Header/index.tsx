@@ -58,15 +58,15 @@ export function Header() {
 
 
             <DropdownMenu open={isOpen}>
-                {menuItems.map(menu =>
-                    <li
-                        key={menu.label}
-                        isActive={location.pathname === menu.href}
-                    >
-                        <a href={menu.href}>{menu.label}</a>
-                        <Seperator width="large" />
-                    </li>
-                )}
+                {/*{menuItems.map(menu =>*/}
+                {/*    <li*/}
+                {/*        key={menu.label}*/}
+                {/*        isActive={location.pathname === menu.href}*/}
+                {/*    >*/}
+                {/*        <a href={menu.href}>{menu.label}</a>*/}
+                {/*        <Seperator width="large" />*/}
+                {/*    </li>*/}
+                {/*)}*/}
             </DropdownMenu>
         </Container>
     )
