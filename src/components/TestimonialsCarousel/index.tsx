@@ -37,7 +37,7 @@ export function TestimonialsCarousel() {
         // speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         centerMode: true,
         centerPadding: '0',
         autoplay: true,
