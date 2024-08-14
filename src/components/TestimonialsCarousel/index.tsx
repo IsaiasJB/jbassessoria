@@ -37,7 +37,7 @@ export function TestimonialsCarousel() {
         // speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: 0,
+        arrows: true,
         centerMode: true,
         centerPadding: '0',
         autoplay: true,
@@ -56,7 +56,7 @@ export function TestimonialsCarousel() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -64,7 +64,7 @@ export function TestimonialsCarousel() {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 680,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
