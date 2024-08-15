@@ -42,8 +42,8 @@ export function TestimonialsCarousel() {
         centerMode: true,
         centerPadding: '0',
         autoplay: true,
-        speed: 1000,
-        autoplaySpeed: 3000,
+        speed: 1200,
+        autoplaySpeed: 5000,
         cssEase: "linear",
         initialSlide: 0,
         responsive: [

@@ -26,19 +26,19 @@ export function Footer() {
                     <FooterTitle>Telefone</FooterTitle>
                     <ContactInfo>
                         <p>(61) 9 9194 9392</p>
-                        <p>(61) 3371 3333</p>
+                        <p>(61) 3028-6766</p>
                     </ContactInfo>
                 </FooterItem>
                 <FooterItem>
                     <FooterTitle>E-mail</FooterTitle>
                     <ContactInfo>
-                        <p>contato@jbassessoria.com</p>
+                        <p>contato@jbassessoriacontabil.com</p>
                     </ContactInfo>
                 </FooterItem>
                 <FooterItem>
                     <FooterTitle>Redes Sociais</FooterTitle>
                     <SocialLinks>
-                        <SocialIcon href="https://www.instagram.com" aria-label="Instagram">
+                        <SocialIcon href="https://www.instagram.com/jb_contabilempresarial" target="_blank" aria-label="Instagram">
                             <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path
