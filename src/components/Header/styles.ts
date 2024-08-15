@@ -13,6 +13,10 @@ export const Container = styled('header', {
 
     '@tablet': {
         justifyContent: 'space-around',
+    },
+
+    '@mobile': {
+        padding: '2rem 1.375rem',
     }
 })
 
@@ -76,38 +80,13 @@ export const Link = styled('li', {
     }
 })
 
-// export const HamburgerButton = styled('button', {
-//     background: '$primary',
-//     border: 'none',
-//     cursor: 'pointer',
-//     display: 'flex',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//     width: '3rem',
-//     height: '3rem',
-//     borderRadius: '0.5rem',
-//     padding: '$1 $2',
-//
-//     '@desktop': {
-//         display: 'none',
-//     },
-//
-//     '@tablet': {
-//         display: 'flex',
-//     },
-//
-//     '@mobile': {
-//         display: 'flex',
-//     },
-// });
-
 export const DropdownMenu = styled('ul', {
     display: 'flex',
     flexDirection: 'column',
     listStyle: 'none',
     position: 'absolute',
-    top: '90px',
-    right: '200px',
+    top: '95px',
+    right: '160px',
     textAlign: 'right',
     backgroundColor: '$primary',
     borderRadius: '8px',
@@ -115,6 +94,10 @@ export const DropdownMenu = styled('ul', {
     boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.2)',
     zIndex: 1000,
     padding: '10px',
+
+    '@mobile' : {
+        right: '10px',
+    },
 
     '& a': {
         padding: '$2 $4',

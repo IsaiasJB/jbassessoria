@@ -9,14 +9,9 @@ export const HeroContainer = styled('div', {
     backgroundPosition: 'center',
     height: '50vh',
 
-
-    // '@desktop': {
-    //     justifyContent: 'space-between',
-    // },
-    //
-    // '@tablet': {
-    //     justifyContent: 'space-around',
-    // }
+    '@tablet': {
+        height: '35vh',
+    }
 })
 
 export const ContentContainer = styled('div', {
@@ -31,10 +26,11 @@ export const ContentContainer = styled('div', {
     fontSize: '$5',
 
     '@tablet': {
-        fontSize: '$4',
+        fontSize: '22px',
     },
     '@mobile': {
         fontSize: '$3',
+        paddingLeft: '100px',
     }
 });
 

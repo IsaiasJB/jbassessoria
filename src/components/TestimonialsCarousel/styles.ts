@@ -3,6 +3,7 @@ import { styled } from "@/styles";
 export const TestimonialsContainer = styled('div', {
     width: '100%',
     textAlign: 'center',
+    marginBottom: '40px',
 
 });
 

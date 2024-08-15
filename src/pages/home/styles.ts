@@ -4,8 +4,8 @@ export const Container = styled('div', {
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
-    width: '100%',
-    minHeight: '100vh',
+    maxWidth: '100%',
+
 })
 
 export const Content = styled('div', {
@@ -15,6 +15,15 @@ export const Content = styled('div', {
     padding: '2rem 9.375rem',
     flexDirection: 'column',
     width: '100%',
+
+    '@tablet': {
+        padding: '2rem 4rem',
+    },
+
+    '@mobile': {
+        display: 'list-item',
+        padding: '2rem 4rem',
+    }
 })
 
 export const ContentTitle = styled('div', {
@@ -78,7 +87,6 @@ export const Title = styled('h2', {
             height: '2px', // Altura da linha
             backgroundColor: '$highlight',
         },
-        // fontSize: '$4',
     },
     '@mobile': {
         fontSize: '22px',

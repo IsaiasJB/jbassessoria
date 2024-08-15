@@ -14,7 +14,6 @@ export const FooterSection = styled('div', {
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%',
-    // maxWidth: '1200px',
 
     '@mobile': {
         display: 'grid',

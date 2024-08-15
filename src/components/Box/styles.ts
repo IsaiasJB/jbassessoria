@@ -53,7 +53,7 @@ export const BoxTitle = styled('h2', {
             height: '2px', // Altura da linha
             backgroundColor: '$highlight',
         },
-        // fontSize: '$4',
+
     },
     '@mobile': {
         '&::after': {
@@ -74,5 +74,10 @@ export const BoxText = styled('div', {
 });
 
 export const BoxImage = styled('div', {
-
+    '@mobile': {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
 });

@@ -17,6 +17,7 @@ import {TestimonialsCarousel} from "@/components/TestimonialsCarousel";
 import {Blog} from "@/components/Blog";
 import React, {useEffect, useState} from "react";
 import {Hero} from "@/components/Hero";
+import {useWindowSize} from "@/utils/useWindowSize";
 
 
 export default function Home() {
@@ -58,35 +59,3 @@ export default function Home() {
     );
 }
 
-interface WindowSize {
-    width: number | undefined;
-    height: number | undefined;
-}
-
-function useWindowSize(): WindowSize {
-    const [windowSize, setWindowSize] = useState<WindowSize>({
-        width: undefined,
-        height: undefined,
-    });
-
-    useEffect(() => {
-        // Função para atualizar o tamanho da janela
-        function handleResize() {
-            setWindowSize({
-                width: window.innerWidth,
-                height: window.innerHeight,
-            });
-        }
-
-        // Adiciona o event listener para monitorar o resize
-        window.addEventListener('resize', handleResize);
-
-        // Chama a função pela primeira vez para setar o tamanho inicial
-        handleResize();
-
-        // Remove o event listener ao desmontar o componente
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    return windowSize;
-}
