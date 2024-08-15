@@ -9,13 +9,11 @@ import {
     SocialLinks
 } from "@/components/Footer/styles";
 import Image from "next/image";
-
-interface FooterProps {
-    imageSrc: string;
-}
+import logo from "@/assets/Vector.svg";
 
 
-export function Footer({imageSrc}: FooterProps) {
+
+export function Footer() {
     return (
         <FooterContainer>
             <FooterSection>
@@ -68,7 +66,7 @@ export function Footer({imageSrc}: FooterProps) {
                 </FooterItem>
                 <FooterItem>
                     <LogoLink>
-                        <Image src={imageSrc}  alt="Card Img" width={100} height={84}  quality={100} priority/>
+                        <Image src={logo.src}  alt="Card Img" width={100} height={84}  quality={100} priority/>
                     </LogoLink>
                 </FooterItem>
             </FooterSection>

@@ -7,6 +7,8 @@ export const Container = styled('header', {
     padding: '2rem 9.375rem',
     width: '100%',
 
+
+
     '@desktop': {
         justifyContent: 'space-between',
     },
@@ -23,6 +25,11 @@ export const Container = styled('header', {
 export const HeaderContent = styled('div', {
     display: 'flex',
     gap: '1rem',
+    textAlign: 'center',
+
+    '@desktop': {
+        width: '21%',
+    },
 
     '@mobile': {
         marginLeft: '3rem'

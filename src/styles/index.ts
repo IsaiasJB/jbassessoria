@@ -37,7 +37,7 @@ export const {
     },
     media: {
         mobile: '(max-width: 680px)',
-        tablet: '(min-width: 681px) and (max-width: 1023px)',
-        desktop: '(min-width: 1024px)',
+        tablet: '(min-width: 681px) and (max-width: 1024px)',
+        desktop: '(min-width: 1025px)',
     },
 })

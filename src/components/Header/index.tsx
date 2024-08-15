@@ -13,8 +13,8 @@ import {HamburgerButton} from "@/components/HamburgerButton";
 const menuItems = [
     { label: 'Inicio', href: '/' },
     { label: 'Sobre nós', href: '/about' },
-    { label: 'Serviços', href: '/services' },
-    { label: 'Contato', href: '/contact' },
+    { label: 'Serviços', href: '/servicos' },
+    { label: 'Contato', href: '/contato' },
     // { label: 'Blog', href: '/blog' },
 ]
 
@@ -23,6 +23,10 @@ export function Header() {
     const toggleMenu = () => setIsOpen(!isOpen)
 
     const location = useRouter()
+
+    const handleClientAreaClick = () => {
+        window.open('https://questorcto.app.questorpublico.com.br/entrar', '_blank', 'noopener noreferrer');
+    };
 
 
     return (
@@ -46,7 +50,7 @@ export function Header() {
                 )}
             </Menu>
             <HeaderContent>
-                <Button hideLabelOnMobile color="primary" size="large"  icon={<User size={20} />} iconPosition="left" label="Área do cliente"/>
+                <Button hideLabelOnMobile color="primary" size="large"  icon={<User size={20} />} onClick={handleClientAreaClick}  iconPosition="left" label="Área do cliente"/>
                 <HamburgerButton onClick={toggleMenu} open={isOpen} className={isOpen ? 'open' : ''}>
                     <List size={30} color="#97D5EB" />
                 </HamburgerButton>

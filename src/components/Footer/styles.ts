@@ -98,4 +98,8 @@ export const CopyrightSection = styled('div', {
     width: '100%',
     textAlign: 'center',
     fontSize: '14px',
+
+    '@mobile': {
+        fontSize: '8px',
+    }
 });
