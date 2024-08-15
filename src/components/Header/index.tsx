@@ -9,10 +9,6 @@ import {useState} from "react";
 import {Seperator} from "@/components/Separator";
 import {HamburgerButton} from "@/components/HamburgerButton";
 
-interface WindowSize {
-    width: number | undefined;
-    height: number | undefined;
-}
 
 const menuItems = [
     { label: 'Inicio', href: '/' },

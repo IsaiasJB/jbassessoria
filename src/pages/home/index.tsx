@@ -15,7 +15,7 @@ import {Footer} from "@/components/Footer";
 import {Box} from "@/components/Box";
 import {TestimonialsCarousel} from "@/components/TestimonialsCarousel";
 import {Blog} from "@/components/Blog";
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {Hero} from "@/components/Hero";
 import {useWindowSize} from "@/utils/useWindowSize";
 
