@@ -1,4 +1,4 @@
-import { styled } from "@/styles";
+import {styled} from "@/styles";
 
 export const Container = styled('div', {
     display: 'flex',
@@ -26,23 +26,26 @@ export const Content = styled('div', {
 })
 
 export const ContentTitle = styled('div', {
+    display: 'flex',
+    justifyContent: 'center',
     marginBottom: '1rem',
 
-    '@desktop' : {
+
+    '@desktop': {
         display: 'flex',
         alignItems: 'center',
         width: '100%',
         justifyContent: 'space-between',
     },
 
-    '@tablet' : {
+    '@tablet': {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         width: '100%',
         justifyContent: 'center',
     },
-    '@mobile' : {
+    '@mobile': {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -63,6 +66,7 @@ export const Title = styled('h2', {
     margin: '$2 0',
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
     position: 'relative',
     paddingBottom: '0.5rem',
 
@@ -102,21 +106,21 @@ export const Title = styled('h2', {
 });
 
 export const ContentCard = styled('div', {
-    '@desktop' : {
+    '@desktop': {
         display: 'flex',
         justifyContent: 'space-around',
         gap: '3rem',
         width: '100%',
     },
 
-    '@tablet' : {
+    '@tablet': {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         gap: '3rem',
         width: '100%',
     },
 
-    '@mobile' : {
+    '@mobile': {
         display: 'grid',
         gridTemplateColumns: '1fr',
         gap: '3rem',
