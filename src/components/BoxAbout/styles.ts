@@ -38,6 +38,9 @@ export const BoxTitle = styled('h2', {
 
 export const BoxText = styled('div', {
     color: '$primary',
+    'p': {
+        marginBottom: '$3',
+    },
 
     '@tablet': {
         textAlign: 'justify',

@@ -7,6 +7,7 @@ export const descriptions = {
     sobreNos2: "Nosso objetivo é proporcionar a melhor experiência em atendimento para nossos clientes, oferecendo a melhor estratégia para o sucesso da sua empresa.\n",
     sobreNos3: "Na JB Assessoria Contábil Empresarial, entendemos que a contabilidade é o alicerce de qualquer negócio próspero. É por isso que nos dedicamos a oferecer soluções personalizadas e eficientes, que vão além da simples organização de números.\n" +
         "E a prova disso? Mais de 500 demonstrações contábeis elaboradas com precisão e expertise, auxiliando milhares de empresas a prosperar.",
-    sobreNos4: "Desde pequenos empreendedores em busca de clareza financeira até grandes corporações que buscam otimizar seus investimentos, ajudamos cada cliente a tomar decisões estratégicas com segurança.\n" +
-        "Cada balanço patrimonial, cada relatório de fluxo de caixa, cada declaração fiscal é um passo em direção ao sucesso.\n"
+    sobreNos4: "Desde pequenos empreendedores em busca de clareza financeira até grandes corporações que buscam otimizar seus investimentos, ajudamos cada cliente a tomar decisões estratégicas com segurança.\n",
+    sobreNos5: "Cada balanço patrimonial, cada relatório de fluxo de caixa, cada declaração fiscal é um passo em direção ao sucesso.\n",
+
 };

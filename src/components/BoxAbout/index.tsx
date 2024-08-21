@@ -5,51 +5,45 @@ import {useWindowSize} from "@/utils/useWindowSize";
 
 interface BoxAbout {
     title?: string
-    text?: string
-    text2?: string
+    texts?: string[]
     imageSrc: string
     isTitle?: boolean
     isImageAbout?: boolean
 }
 
-export function BoxAbout({title, text, text2, imageSrc, isTitle, isImageAbout}: BoxAbout) {
-    const {width} = useWindowSize();
+export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout}: BoxAbout) {
+    const {width = 0} = useWindowSize();
 
-    const currentWidth = width ?? 0;
+    const calculateDimensions = (isAbout: boolean) => {
+        if (width <= 680) {
+            return isAbout ? {width: 333, height: 200} : {width: 320, height: 180};
+        } else if (width <= 1024) {
+            return isAbout ? {width: 480, height: 300} : {width: 480, height: 300};
+        } else {
+            return isAbout ? {width: 680, height: 400} : {width: 480, height: 200};
+        }
+    };
 
-    const isMobile = currentWidth <= 680;
-    const isTablet = currentWidth > 681 && currentWidth <= 1024;
-    const isDesktop = currentWidth > 1025;
-
-
-    const imageWidth = width && width <= 680 ? 333 : 480;
-    const imageHeight = width && width <= 680 ? 200 : 200;
-
-
-    const imageAboutWidth = isMobile ? 300 : isTablet ? 480 : 600
-    const imageAboutHeight = isMobile ? 200 : isTablet ? 250 : 400
+    const {width: imageWidth, height: imageHeight} = calculateDimensions(isImageAbout || false);
 
 
     return (
         <BoxContainer>
-            {
-                isTitle && <BoxTitle>{title}</BoxTitle>
-            }
+            {isTitle && <BoxTitle>{title}</BoxTitle>}
             <BoxText>
-                <p>{text}</p>
-                <br/>
-                <p>{text2}</p>
+                {texts?.map((text, index) => (
+                    <p key={index}>{text}</p>
+                ))}
             </BoxText>
             <BoxImage>
-                {
-                    isImageAbout ?
-                        <Image src={imageSrc} alt="Card Img" width={imageAboutWidth} height={imageAboutHeight}
-                               quality={100}
-                               priority/> :
-                        <Image src={imageSrc} alt="Card Img" width={imageWidth} height={imageHeight} quality={100}
-                               priority/>
-                }
-
+                <Image
+                    src={imageSrc}
+                    alt="Card Img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    quality={100}
+                    priority
+                />
             </BoxImage>
         </BoxContainer>
     )

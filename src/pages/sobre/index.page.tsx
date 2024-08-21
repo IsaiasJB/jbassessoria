@@ -11,6 +11,7 @@ import {BoxAbout} from "@/components/BoxAbout";
 
 
 export default function About() {
+    const {sobreNos1, sobreNos3, sobreNos2, sobreNos4, sobreNos5} = descriptions;
     return (
         <>
             <Container>
@@ -22,13 +23,13 @@ export default function About() {
                         <Title>Contabilidade inteligente para negócios inovadores</Title>
                     </ContentTitle>
                     <Seperator/>
-                    <BoxAbout text={descriptions.sobreNos1} text2={descriptions.sobreNos2} imageSrc={`${cartao.src}`}/>
+                    <BoxAbout texts={[sobreNos1, sobreNos2]} imageSrc={`${cartao.src}`}/>
                     <Seperator width="full"/>
                     <ContentTitle>
                         <Title>Conheça as empresas que não se preocupam mais com a contabilidade</Title>
                     </ContentTitle>
                     <Seperator width="full"/>
-                    <BoxAbout text={descriptions.sobreNos3} text2={descriptions.sobreNos4} isImageAbout
+                    <BoxAbout texts={[sobreNos3, sobreNos4, sobreNos5]} isImageAbout
                               imageSrc={`${contabilidade.src}`}/>
                 </Content>
 
