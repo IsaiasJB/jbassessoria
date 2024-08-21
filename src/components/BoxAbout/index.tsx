@@ -15,9 +15,11 @@ interface BoxAbout {
 export function BoxAbout({title, text, text2, imageSrc, isTitle, isImageAbout}: BoxAbout) {
     const {width} = useWindowSize();
 
-    const isMobile = width <= 680;
-    const isTablet = width > 681 && width <= 1024;
-    const isDesktop = width > 1025;
+    const currentWidth = width ?? 0;
+
+    const isMobile = currentWidth <= 680;
+    const isTablet = currentWidth > 681 && currentWidth <= 1024;
+    const isDesktop = currentWidth > 1025;
 
 
     const imageWidth = width && width <= 680 ? 333 : 480;
