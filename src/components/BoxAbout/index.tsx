@@ -1,4 +1,4 @@
-import {BoxContainer, BoxImage, BoxText, BoxTitle} from "./styles";
+import {BoxContainer, BoxImage, BoxText, BoxTitle, ContentWrapper} from "./styles";
 import Image from "next/image";
 import {useWindowSize} from "@/utils/useWindowSize";
 
@@ -9,9 +9,10 @@ interface BoxAbout {
     imageSrc: string
     isTitle?: boolean
     isImageAbout?: boolean
+    isServiceScreen?: boolean
 }
 
-export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout}: BoxAbout) {
+export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout, isServiceScreen}: Readonly<BoxAbout>) {
     const {width = 0} = useWindowSize();
 
     const calculateDimensions = (isAbout: boolean) => {
@@ -28,13 +29,15 @@ export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout}: BoxAbo
 
 
     return (
-        <BoxContainer>
-            {isTitle && <BoxTitle>{title}</BoxTitle>}
-            <BoxText>
-                {texts?.map((text, index) => (
-                    <p key={index}>{text}</p>
-                ))}
-            </BoxText>
+        <BoxContainer isServiceScreen={isServiceScreen} >
+            <ContentWrapper isServiceScreen={isServiceScreen} >
+                {isTitle && <BoxTitle isServiceScreen={isServiceScreen}>{title}</BoxTitle>}
+                <BoxText>
+                    {texts?.map((text, index) => (
+                        <p key={`${index}-${text.slice(0, 10)}`}>{text}</p>
+                    ))}
+                </BoxText>
+            </ContentWrapper>
             <BoxImage>
                 <Image
                     src={imageSrc}

@@ -41,3 +41,4 @@ export const {
         desktop: '(min-width: 1025px)',
     },
 })
+

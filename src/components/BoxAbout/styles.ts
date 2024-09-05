@@ -2,7 +2,6 @@ import {styled} from "@/styles";
 
 export const BoxContainer = styled('div', {
     display: 'flex',
-    // backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
     gap: '20px',
@@ -24,8 +23,32 @@ export const BoxContainer = styled('div', {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-    }
+    },
 
+
+});
+
+export const ContentWrapper = styled('div', {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+
+    variants: {
+        isServiceScreen: {
+            true: {
+                flexDirection: 'column', // Coloca o título acima do texto
+                textAlign: 'left',
+                '@mobile': {
+                    textAlign: 'center',
+                },
+            },
+            false: {
+                flexDirection: 'column', // Manter em coluna se não for tela de serviços
+                textAlign: 'left',
+            },
+        },
+    },
 });
 
 export const BoxTitle = styled('h2', {
@@ -34,10 +57,29 @@ export const BoxTitle = styled('h2', {
     display: 'flex',
     position: 'relative',
     paddingBottom: '0.5rem',
+
+    variants: {
+        isServiceScreen: {
+            true: {
+                fontSize: '30px',
+                fontWeight: 'bold',
+                color: '$primary',
+                marginBottom: '20px',
+                '@mobile': {
+                    fontSize: '25px',
+                },
+            },
+            false: {
+                fontSize: '$5',
+            },
+        },
+    },
+
 });
 
 export const BoxText = styled('div', {
     color: '$primary',
+    fontSize: '18px',
     'p': {
         marginBottom: '$3',
     },
@@ -48,6 +90,7 @@ export const BoxText = styled('div', {
 
     '@mobile': {
         textAlign: 'justify',
+        fontSize: '16px',
     }
 
 });

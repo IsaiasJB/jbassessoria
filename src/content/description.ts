@@ -9,5 +9,6 @@ export const descriptions = {
         "E a prova disso? Mais de 500 demonstrações contábeis elaboradas com precisão e expertise, auxiliando milhares de empresas a prosperar.",
     sobreNos4: "Desde pequenos empreendedores em busca de clareza financeira até grandes corporações que buscam otimizar seus investimentos, ajudamos cada cliente a tomar decisões estratégicas com segurança.\n",
     sobreNos5: "Cada balanço patrimonial, cada relatório de fluxo de caixa, cada declaração fiscal é um passo em direção ao sucesso.\n",
+    servicos: "A JB Assessoria Contábil Empresarial oferece muito mais do que simples organização financeira.\n",
 
 };
