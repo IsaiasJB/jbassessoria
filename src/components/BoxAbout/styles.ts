@@ -1,5 +1,8 @@
 import {styled} from "@/styles";
 
+interface BoxContainerProps {
+    isServiceScreen?: boolean;
+}
 export const BoxContainer = styled('div', {
     display: 'flex',
     alignItems: 'center',
@@ -26,7 +29,7 @@ export const BoxContainer = styled('div', {
     },
 
 
-});
+})<BoxContainerProps>
 
 export const ContentWrapper = styled('div', {
     display: 'flex',
@@ -75,7 +78,7 @@ export const BoxTitle = styled('h2', {
         },
     },
 
-});
+})<BoxContainerProps>
 
 export const BoxText = styled('div', {
     color: '$primary',

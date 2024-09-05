@@ -29,7 +29,7 @@ export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout, isServi
 
 
     return (
-        <BoxContainer isServiceScreen={isServiceScreen} >
+        <BoxContainer>
             <ContentWrapper isServiceScreen={isServiceScreen} >
                 {isTitle && <BoxTitle isServiceScreen={isServiceScreen}>{title}</BoxTitle>}
                 <BoxText>
