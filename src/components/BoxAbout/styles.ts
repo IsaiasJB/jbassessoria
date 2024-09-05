@@ -57,7 +57,7 @@ export const ContentWrapper = styled('div', {
         },
     },
     {
-        shouldForwardProp: (prop) => prop !== 'isServiceScreen'
+        shouldForwardProp: (prop: string) => prop !== 'isServiceScreen'
     }
 );
 
@@ -86,7 +86,7 @@ export const BoxTitle = styled('h2', {
         },
 
     }, {
-        shouldForwardProp: (prop) => prop !== 'isServiceScreen'
+        shouldForwardProp: (prop: string) => prop !== 'isServiceScreen'
     }
 )
 
