@@ -32,9 +32,6 @@ export const BoxContainer = styled('div', {
 
 
     },
-    {
-        shouldForwardProp: (prop) => prop !== 'isServiceScreen'
-    }
 )
 
 export const ContentWrapper = styled('div', {
