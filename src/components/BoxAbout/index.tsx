@@ -3,7 +3,7 @@ import Image from "next/image";
 import {useWindowSize} from "@/utils/useWindowSize";
 
 
-interface BoxAbout {
+interface BoxAboutProps {
     title?: string
     texts?: string[]
     imageSrc: string
@@ -12,7 +12,7 @@ interface BoxAbout {
     isServiceScreen?: boolean
 }
 
-export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout, isServiceScreen}: Readonly<BoxAbout>) {
+export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout, isServiceScreen}: Readonly<BoxAboutProps>) {
     const {width = 0} = useWindowSize();
 
     const calculateDimensions = (isAbout: boolean) => {
@@ -29,7 +29,7 @@ export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout, isServi
 
 
     return (
-        <BoxContainer>
+        <BoxContainer isServiceScreen={isServiceScreen}>
             <ContentWrapper isServiceScreen={isServiceScreen} >
                 {isTitle && <BoxTitle isServiceScreen={isServiceScreen}>{title}</BoxTitle>}
                 <BoxText>

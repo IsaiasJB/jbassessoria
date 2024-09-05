@@ -2,7 +2,9 @@ import {styled} from "@/styles";
 
 interface BoxContainerProps {
     isServiceScreen?: boolean;
+    children: React.ReactNode;
 }
+
 export const BoxContainer = styled('div', {
     display: 'flex',
     alignItems: 'center',
@@ -29,56 +31,64 @@ export const BoxContainer = styled('div', {
     },
 
 
-})<BoxContainerProps>
+})
 
 export const ContentWrapper = styled('div', {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-    justifyContent: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        justifyContent: 'center',
 
-    variants: {
-        isServiceScreen: {
-            true: {
-                flexDirection: 'column', // Coloca o título acima do texto
-                textAlign: 'left',
-                '@mobile': {
-                    textAlign: 'center',
+        variants: {
+            isServiceScreen: {
+                true: {
+                    flexDirection: 'column', // Coloca o título acima do texto
+                    textAlign: 'left',
+                    '@mobile': {
+                        textAlign: 'center',
+                    },
                 },
-            },
-            false: {
-                flexDirection: 'column', // Manter em coluna se não for tela de serviços
-                textAlign: 'left',
+                false: {
+                    flexDirection: 'column', // Manter em coluna se não for tela de serviços
+                    textAlign: 'left',
+                },
             },
         },
     },
-});
+    {
+        shouldForwardProp: (prop) => prop !== 'isServiceScreen'
+    }
+);
 
 export const BoxTitle = styled('h2', {
-    fontSize: '$5',
-    fontWeight: 'normal',
-    display: 'flex',
-    position: 'relative',
-    paddingBottom: '0.5rem',
+        fontSize: '$5',
+        fontWeight: 'normal',
+        display: 'flex',
+        position: 'relative',
+        paddingBottom: '0.5rem',
 
-    variants: {
-        isServiceScreen: {
-            true: {
-                fontSize: '30px',
-                fontWeight: 'bold',
-                color: '$primary',
-                marginBottom: '20px',
-                '@mobile': {
-                    fontSize: '25px',
+        variants: {
+            isServiceScreen: {
+                true: {
+                    fontSize: '30px',
+                    fontWeight: 'bold',
+                    color: '$primary',
+                    marginBottom: '20px',
+                    '@mobile': {
+                        fontSize: '25px',
+                    },
+                },
+                false: {
+                    fontSize: '$5',
                 },
             },
-            false: {
-                fontSize: '$5',
-            },
         },
-    },
 
-})<BoxContainerProps>
+    }, {
+        shouldForwardProp: (prop) => prop !== 'isServiceScreen'
+    }
+)
+
 
 export const BoxText = styled('div', {
     color: '$primary',
