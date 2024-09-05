@@ -6,32 +6,36 @@ interface BoxContainerProps {
 }
 
 export const BoxContainer = styled('div', {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '20px',
-    padding: '20px',
-
-    '@desktop': {
-        gridTemplateColumns: 'repeat(3, 1fr)',
-    },
-
-    '@tablet': {
         display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
         alignItems: 'center',
-    },
-
-    '@mobile': {
-        display: 'flex',
-        flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
+        gap: '20px',
+        padding: '20px',
+
+        '@desktop': {
+            gridTemplateColumns: 'repeat(3, 1fr)',
+        },
+
+        '@tablet': {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+        },
+
+        '@mobile': {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+        },
+
+
     },
-
-
-})
+    {
+        shouldForwardProp: (prop) => prop !== 'isServiceScreen'
+    }
+)
 
 export const ContentWrapper = styled('div', {
         display: 'flex',
