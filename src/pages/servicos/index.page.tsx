@@ -27,7 +27,7 @@ export default function Service() {
                     <ContentTitle>
                         <Title>Nossos Serviços</Title>
                     </ContentTitle>
-                    <ListaServicos imageSrc={icone.src}  />
+                    <ListaServicos/>
 
                 </Content>
 

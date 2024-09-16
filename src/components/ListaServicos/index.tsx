@@ -1,31 +1,86 @@
-import {Container, ServiceBox, ServiceItem, ServicesWrapper, ServiceTitle} from "./styles";
+import {
+    Container, DialogClose,
+    DialogContent,
+    DialogOverlay,
+    DialogTitle,
+    ServiceBox,
+    ServiceItem, ServiceList, ServiceListItem,
+    ServicesWrapper,
+    ServiceTitle
+} from "./styles"
 import Image from "next/image";
+import iconContabil from "@/assets/icones/taxes_10010280.png"
+import iconTrabalhista from "@/assets/icones/business.png"
+import iconFiscal from "@/assets/icones/budget.png"
+import iconEmpresarial from "@/assets/icones/businessman.png"
+import {useState} from "react";
+import * as Dialog from "@radix-ui/react-dialog";
+import {descriptions} from "@/content/description";
+
+const {contabil, empresarial, tributario, trabalhista} = descriptions;
 
 const services = [
-    { id: 1, name: 'Contábil' },
-    { id: 2, name: 'Trabalhista' },
-    { id: 3, name: 'Tributária/Fiscal' },
-    { id: 4, name: 'Empresarial' },
+    {id: 1, name: 'Contábil', icon: iconContabil.src, servicesList: contabil},
+    {
+        id: 2,
+        name: 'Trabalhista',
+        icon: iconTrabalhista.src,
+        servicesList: trabalhista
+    },
+    {
+        id: 3,
+        name: 'Tributária/Fiscal',
+        icon: iconFiscal.src,
+        servicesList: tributario
+    },
+    {
+        id: 4,
+        name: 'Empresarial',
+        icon: iconEmpresarial.src,
+        servicesList: empresarial
+    },
 ];
 
-interface ListaServicosProps {
-    imageSrc: string
-}
-export function ListaServicos({imageSrc}: Readonly<ListaServicosProps>) {
+
+export function ListaServicos() {
+    const [selectedService, setSelectedService] = useState(null)
+
+    const handleServiceClick = (service) => {
+        setSelectedService(service)
+    }
+
     return (
         <Container>
             <ServicesWrapper>
                 {services.map((service) => (
                     <ServiceItem key={service.id}>
-                        <ServiceBox>
-                            <Image
-                            src={imageSrc}
-                            alt="Icone Img"
-                            width={70}
-                            height={70}
-                            quality={100}
-                            priority
-                        /></ServiceBox>
+                        <Dialog.Root>
+                            <Dialog.Trigger asChild>
+                                <ServiceBox onClick={() => handleServiceClick(service)} >
+                                    <Image
+                                        src={service.icon}
+                                        alt="Icone Img"
+                                        width={55}
+                                        height={55}
+                                        quality={100}
+                                        priority
+                                    /></ServiceBox>
+                            </Dialog.Trigger>
+
+                            <Dialog.Portal>
+                                <DialogOverlay/>
+                                <DialogContent>
+                                    <DialogTitle>{selectedService?.name}</DialogTitle>
+                                    <ServiceList>
+                                        {selectedService?.servicesList.map((serv, idx) => (
+                                            <ServiceListItem key={idx}>{serv}</ServiceListItem>
+                                        ))}
+                                    </ServiceList>
+                                    <DialogClose>Fechar</DialogClose>
+                                </DialogContent>
+                            </Dialog.Portal>
+                        </Dialog.Root>
+
                         <ServiceTitle>{service.name}</ServiceTitle>
                     </ServiceItem>
                 ))}
