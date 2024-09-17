@@ -40,6 +40,7 @@ export const ContentWrapper = styled('div', {
         alignItems: 'flex-start',
         justifyContent: 'center',
 
+
         variants: {
             isServiceScreen: {
                 true: {
@@ -105,6 +106,10 @@ export const BoxText = styled('div', {
     color: '$primary',
     fontSize: '18px',
     marginTop: '3rem',
+
+    'p': {
+        marginBottom: '$3',
+    },
 
     '@tablet': {
         textAlign: 'justify',
