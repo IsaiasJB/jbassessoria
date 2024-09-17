@@ -68,6 +68,16 @@ export const BoxTitle = styled('h2', {
         position: 'relative',
         paddingBottom: '0.5rem',
 
+    '&::after': {
+        content: '',
+        position: 'absolute',
+        left: 0,
+        bottom: -12,
+        width: '117px', // Largura da linha
+        height: '2px', // Altura da linha
+        backgroundColor: '$highlight',
+    },
+
         variants: {
             isServiceScreen: {
                 true: {
@@ -94,9 +104,7 @@ export const BoxTitle = styled('h2', {
 export const BoxText = styled('div', {
     color: '$primary',
     fontSize: '18px',
-    'p': {
-        marginBottom: '$3',
-    },
+    marginTop: '3rem',
 
     '@tablet': {
         textAlign: 'justify',

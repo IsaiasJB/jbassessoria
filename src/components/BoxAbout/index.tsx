@@ -1,6 +1,7 @@
 import {BoxContainer, BoxImage, BoxText, BoxTitle, ContentWrapper} from "./styles";
 import Image from "next/image";
 import {useWindowSize} from "@/utils/useWindowSize";
+import {ContactForm} from "@/components/ContactForm";
 
 
 interface BoxAboutProps {
@@ -10,9 +11,10 @@ interface BoxAboutProps {
     isTitle?: boolean
     isImageAbout?: boolean
     isServiceScreen?: boolean
+    isContactForm?: boolean
 }
 
-export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout, isServiceScreen}: Readonly<BoxAboutProps>) {
+export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout, isServiceScreen, isContactForm}: Readonly<BoxAboutProps>) {
     const {width = 0} = useWindowSize();
 
     const calculateDimensions = (isAbout: boolean) => {
@@ -32,6 +34,7 @@ export function BoxAbout({title, texts, imageSrc, isTitle, isImageAbout, isServi
         <BoxContainer>
             <ContentWrapper isServiceScreen={isServiceScreen} >
                 {isTitle && <BoxTitle isServiceScreen={isServiceScreen}>{title}</BoxTitle>}
+                {isContactForm && <ContactForm />}
                 <BoxText>
                     {texts?.map((text, index) => (
                         <p key={`${index}-${text.slice(0, 10)}`}>{text}</p>

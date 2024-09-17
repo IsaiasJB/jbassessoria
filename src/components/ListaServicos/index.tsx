@@ -36,7 +36,7 @@ const services = [
     },
     {
         id: 3,
-        name: 'Tributária/Fiscal',
+        name: 'Tributária / Fiscal',
         icon: iconFiscal.src,
         servicesList: tributario
     },
