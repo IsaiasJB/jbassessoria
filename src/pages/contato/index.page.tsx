@@ -63,7 +63,7 @@ export default function Contact() {
                                     : <Title>Escaneie o QR Code ou clique no botão para entrar em contato via
                                         WhatsApp</Title>}
                             </ContentTitle>
-                            <Button onClick={handleWhatsAppClick} color="primary" size="full"
+                            <Button onClick={handleWhatsAppClick} color="primary"
                                     icon={<WhatsappLogo size={20}/>} iconPosition="left"
                                     label="Fale conosco" css={{width: '50%'}}/>
                         </Box>
