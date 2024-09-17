@@ -24,9 +24,9 @@ export function Header() {
 
     const location = useRouter()
 
-    const handleClientAreaClick = () => {
-        window.open('https://questorcto.app.questorpublico.com.br/entrar', '_blank', 'noopener noreferrer');
-    };
+    // const handleClientAreaClick = () => {
+    //     window.open('https://questorcto.app.questorpublico.com.br/entrar', '_blank', 'noopener noreferrer');
+    // };
 
 
     return (
@@ -51,7 +51,7 @@ export function Header() {
             </Menu>
             <HeaderContent>
                 <Button hideLabelOnMobile color="primary" size="large" icon={<User size={20}/>}
-                        onClick={handleClientAreaClick} iconPosition="left" label="Área do cliente"/>
+                        iconPosition="left" label="Área do cliente" css={{opacity: "0.5", cursor: "not-allowed"}}/>
                 <HamburgerButton onClick={toggleMenu} open={isOpen} className={isOpen ? 'open' : ''}>
                     <List size={30} color="#97D5EB"/>
                 </HamburgerButton>

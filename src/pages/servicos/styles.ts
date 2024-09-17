@@ -1,4 +1,4 @@
-import { styled } from "@/styles";
+import {styled} from "@/styles";
 
 export const Container = styled('div', {
     display: 'flex',
@@ -28,8 +28,7 @@ export const Content = styled('div', {
 export const ContentTitle = styled('div', {
     display: 'flex',
     justifyContent: 'center',
-    marginBottom: '0',
-
+    marginBottom: '1rem',
 
     // '@desktop' : {
     //     display: 'flex',

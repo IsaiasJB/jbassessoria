@@ -1,9 +1,9 @@
-import { styled } from "@/styles"
+import {styled} from "@/styles"
 
 export const FormWrapper = styled('form', {
     display: 'flex',
     flexDirection: 'column',
-    gap: '16px',
+    gap: '12px',
     padding: '24px',
     backgroundColor: '$gray100',
     borderRadius: '8px',
@@ -11,12 +11,14 @@ export const FormWrapper = styled('form', {
 });
 
 export const Label = styled('label', {
-    fontSize: '$md',
-    color: '$primary', // Use a cor secundária definida no tema
+    fontSize: '$3',
+    color: '$primary',
 });
 
 export const Input = styled('input', {
-    padding: '8px 12px',
+    padding: '10px',
+    width: '300px',
+    height: '40px',
     fontSize: '$md',
     borderRadius: '4px',
     border: '1px solid $primary',
@@ -36,7 +38,7 @@ export const Textarea = styled('textarea', {
     border: '1px solid $primary',
     backgroundColor: '$gray100',
     color: '$primary',
-    minHeight: '120px',
+    minHeight: '150px',
 
     '&:focus': {
         borderColor: '$primary',

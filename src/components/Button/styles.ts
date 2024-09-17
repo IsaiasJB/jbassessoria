@@ -1,4 +1,4 @@
-import { styled } from '@/styles';
+import {styled} from '@/styles';
 
 
 export const StyledButton = styled('button', {
@@ -13,6 +13,7 @@ export const StyledButton = styled('button', {
     border: 'none',
     cursor: 'pointer',
     transition: 'background-color 0.2s ease',
+    lineHeight: 0,
 
     // Variantes
     variants: {
