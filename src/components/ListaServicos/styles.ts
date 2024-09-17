@@ -93,7 +93,7 @@ export const DialogTitle = styled(Dialog.Title, {
 export const ServiceList = styled('ul', {
     listStyleType: 'disc',
     paddingLeft: '1.5rem',
-    color: '$highlight',
+    color: '$secondary',
 
 });
 
