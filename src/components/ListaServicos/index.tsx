@@ -19,6 +19,13 @@ import {descriptions} from "@/content/description";
 
 const {contabil, empresarial, tributario, trabalhista} = descriptions;
 
+interface Service {
+    id: number;
+    name: string;
+    icon: string;
+    servicesList: string[];
+}
+
 const services = [
     {id: 1, name: 'Contábil', icon: iconContabil.src, servicesList: contabil},
     {
@@ -43,9 +50,9 @@ const services = [
 
 
 export function ListaServicos() {
-    const [selectedService, setSelectedService] = useState(null)
+    const [selectedService, setSelectedService] = useState<Service | null>(null)
 
-    const handleServiceClick = (service) => {
+    const handleServiceClick = (service: Service) => {
         setSelectedService(service)
     }
 
