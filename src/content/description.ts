@@ -12,7 +12,7 @@ export const descriptions = {
     servicos: "A JB Assessoria Contábil Empresarial oferece muito mais do que simples organização financeira.\n",
     contabil: ['Planejamento Tributário', 'Gestão completa referente aos serviços contábil, desde a classificacao dos documentos até a emissão dos relatórios', 'Consultoria Empresarial'],
     empresarial: ['Abertura, Alteração, Legalização e Baixa de empresas', 'Licenciamento e Alvará de Funcionamento', 'Consultoria sobre o porte e melhor forma de tributação', 'Acompanhamento e emissão de certidão negativa junto aos órgãos'],
-    tributario: ['Registro dos documentos fiscais (Notas de compra, venda, prestação de serviços e cupom fiscal', 'Escrituração Fiscal, Apuração de impostos e emissão das guias de tributos a pagar',
+    tributario: ['Registro dos documentos fiscais (Notas de compra, venda, prestação de serviços e cupom fiscal', 'Escrituração Fiscal, Apuração de impostos e emissão das guias de tributos a pagar)',
         'Processamento, análise e entrega das obrigações fiscais e acessórias exigidas pelo fisco', 'Análise da tributação e o correto enquadramento tributário para empresa',
         'Benefícios Fiscais de acordo com o ramo de atividade da empresa', 'Consultoria Tributária', ' Auditoria'
     ],
