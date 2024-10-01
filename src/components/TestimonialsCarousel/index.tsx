@@ -10,7 +10,7 @@ import {
     TestimonialWrapper,
     Title
 } from "@/components/TestimonialsCarousel/styles";
-import indaia from "../../assets/indaia.png"
+import indaia from "../../assets/Indaia.png"
 import mercado from "../../assets/mercado.jpeg"
 
 
