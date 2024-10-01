@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import {
     Avatar,
     Name,
-    Position,
     Quote,
     Testimonial,
     TestimonialsContainer,
@@ -85,7 +84,7 @@ export function TestimonialsCarousel() {
                         <Testimonial>
                             <Avatar src={testimonial.avatar} alt={testimonial.name}/>
                             <Name>{testimonial.name}</Name>
-                            <Position>{testimonial.position}</Position>
+                            {/*<Position>{testimonial.position}</Position>*/}
                             <Quote>{testimonial.quote}</Quote>
                         </Testimonial>
                     </TestimonialWrapper>
