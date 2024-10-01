@@ -68,10 +68,10 @@ export const Testimonial = styled('div', {
 });
 
 export const Avatar = styled('img', {
-    borderRadius: '50%',
-    width: '100px',
-    height: '100px',
-    objectFit: 'cover',
+    borderRadius: '8px',
+    width: '300px',
+    height: '150px',
+    objectFit: 'fill',
     marginBottom: '10px',
 });
 

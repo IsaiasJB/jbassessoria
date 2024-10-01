@@ -10,7 +10,7 @@ import {
     TestimonialWrapper,
     Title
 } from "@/components/TestimonialsCarousel/styles";
-import indaia from "../../assets/Indaia.png"
+import indaia from "../../assets/indaia1.png"
 import mercado from "../../assets/mercado.jpeg"
 
 
@@ -18,7 +18,7 @@ const testimonials = [
     {
         name: 'Supermercado Serve Mais',
         // position: 'Proprietária\nDoçuras da Maria',
-        quote: 'Desde o primeiro contato, me senti acolhida e compreendida. A equipe é extremamente profissional, atenciosa e sempre disposta a esclarecer qualquer dúvida, por menor que seja.',
+        quote: 'Desde o primeiro contato, me senti acolhido e compreendido. A equipe é extremamente profissional, atenciosa e sempre disposta a esclarecer qualquer dúvida, por menor que seja.',
         avatar: `${mercado.src}`,
     },
     {
