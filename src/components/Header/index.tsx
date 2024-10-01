@@ -15,7 +15,7 @@ const menuItems = [
     {label: 'Sobre nós', href: '/sobre'},
     {label: 'Serviços', href: '/servicos'},
     {label: 'Contato', href: '/contato'},
-    // { label: 'Blog', href: '/blog' },
+    {label: 'Links', href: '/links'},
 ]
 
 export function Header() {

@@ -11,22 +11,22 @@ import {
     TestimonialWrapper,
     Title
 } from "@/components/TestimonialsCarousel/styles";
-import maria from "../../assets/maria.png"
-import joao from "../../assets/joao.png"
+import indaia from "../../assets/indaia.png"
+import mercado from "../../assets/mercado.jpeg"
 
 
 const testimonials = [
     {
-        name: 'Maria Silva',
-        position: 'Proprietária\nDoçuras da Maria',
+        name: 'Supermercado Serve Mais',
+        // position: 'Proprietária\nDoçuras da Maria',
         quote: 'Desde o primeiro contato, me senti acolhida e compreendida. A equipe é extremamente profissional, atenciosa e sempre disposta a esclarecer qualquer dúvida, por menor que seja.',
-        avatar: `${maria.src}`,
+        avatar: `${mercado.src}`,
     },
     {
-        name: 'João Oliveira',
-        position: 'Gerente\nTech Solutions',
+        name: 'Indaiá da Construção',
+        // position: 'Gerente\nTech Solutions',
         quote: 'A JB Assessoria é um parceiro estratégico para o meu negócio. Eles nos ajudam a otimizar nossos impostos, identificar oportunidades de economia e tomar decisões mais inteligentes. A confiança que depositamos neles é total.',
-        avatar: `${joao.src}`,
+        avatar: `${indaia.src}`,
     },
 ];
 
@@ -43,7 +43,7 @@ export function TestimonialsCarousel() {
         centerPadding: '0',
         autoplay: true,
         speed: 1200,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 6000,
         cssEase: "linear",
         initialSlide: 0,
         responsive: [

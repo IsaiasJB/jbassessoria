@@ -25,7 +25,7 @@ export function Footer() {
                     </ContactInfo>
                     <FooterTitle>Telefone</FooterTitle>
                     <ContactInfo>
-                        <p>(61) 9 9194 9392</p>
+                        {/*<p>(61) 9 9194 9392</p>*/}
                         <p>(61) 3028-6766</p>
                     </ContactInfo>
                 </FooterItem>

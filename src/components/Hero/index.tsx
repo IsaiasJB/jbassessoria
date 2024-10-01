@@ -4,6 +4,14 @@ import {CaretDoubleRight} from "phosphor-react";
 import React from "react";
 
 export function Hero() {
+
+    const handleWhatsOrcamento = () => {
+        window.open('https://wa.me/556130286766?text=Olá%20gostaria%20de%20fazer%20um%20orçamento.', '_blank', 'noopener noreferrer');
+    };
+    const handleWhatsEmpresa = () => {
+        window.open('https://wa.me/556130286766?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20abertura%20de%20empresa.', '_blank', 'noopener noreferrer');
+    };
+
     return (
         <HeroContainer>
             <ContentContainer>
@@ -15,9 +23,11 @@ export function Hero() {
                     negócios <HighlightText>inovadores</HighlightText>
                 </h1>
                 <HeroButton>
-                    <Button color="secondary" size="large" icon={<CaretDoubleRight size={20}/>} iconPosition="right"
+                    <Button onClick={handleWhatsOrcamento} color="secondary" size="large"
+                            icon={<CaretDoubleRight size={20}/>} iconPosition="right"
                             label="Solicite um orçamento"/>
-                    <Button color="transparent" size="large" icon={<CaretDoubleRight size={20}/>} iconPosition="right"
+                    <Button onClick={handleWhatsEmpresa} color="transparent" size="large"
+                            icon={<CaretDoubleRight size={20}/>} iconPosition="right"
                             label="Abra sua empresa"/>
                 </HeroButton>
 

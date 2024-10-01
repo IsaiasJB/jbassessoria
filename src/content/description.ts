@@ -21,5 +21,18 @@ export const descriptions = {
         'Gestão de envio dos eventos de Segurança e Saúde do Trabalho', 'Terceirização de departamento pessoal', 'Implantação de Departamento Pessoal Interno',
         'Treinamentos para equipes de Departamento Pessoal', 'BPO Trabalhista'
     ],
+    missao: ['Oferecer serviços contábeis de excelência, proporcionando soluções personalizadas que visem a otimização fiscal e a segurança financeira dos nossos clientes. Comprometemo-nos a ser um parceiro estratégico, construindo relações de confiança e transparência, e ajudando nossos clientes a tomar decisões mais estratégicas e eficazes para o seu negócio',
+
+    ],
+    visao: ['Ser reconhecida como a principal referência em assessoria contábil na região, destacando-se pela inovação, excelência no atendimento e pela capacidade de transformar desafios fiscais em oportunidades de crescimento para nossos clientes.',
+
+    ],
+    valores: ['Integridade: Atuamos com ética e transparência em todas as nossas relações.',
+        'Excelência: Buscamos constantemente a qualidade em nossos serviços, superando as expectativas dos nossos clientes.',
+        'Comprometimento: Estamos dedicados ao sucesso de nossos clientes, oferecendo apoio contínuo e soluções personalizadas.',
+        'Inovação: Valorizamos a busca por novas soluções e tecnologias que otimizem processos e resultados.',
+        'Colaboração: Acreditamos no trabalho em equipe e na construção de parcerias sólidas, tanto internamente quanto com nossos clientes.',
+        'Responsabilidade Social: Comprometemo-nos a atuar de forma sustentável e a contribuir positivamente para a comunidade.'
+    ],
 
 }
