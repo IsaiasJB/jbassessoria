@@ -19,11 +19,11 @@ interface CardProps {
     tag?: string
 }
 
-export function Card({imageSrc, title, description, icon, tag}: CardProps) {
+export function Card({imageSrc, title, description, icon, tag}: Readonly<CardProps>) {
     return (
         <CardContainer>
             <ImageContainer>
-                <Image src={imageSrc} alt="Card Img" layout="fill" quality={100}  priority/>
+                <Image src={imageSrc} alt="Card Img" fill quality={100}  priority/>
             </ImageContainer>
             <CardContent>
                 {tag && <Tag>{tag}</Tag>}
